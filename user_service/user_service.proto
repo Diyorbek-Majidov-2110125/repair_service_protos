@@ -12,6 +12,6 @@ service UserService {
     rpc GetById(UserPrimaryKey) returns (User){};
     rpc GetList(GetListUserRequest) returns (GetListUserResponse){};
     rpc Update(UpdateUserRequest) returns (User){};
-    rpc UpdatePatchUser(UpdatePatchUser) returns (User){};
+    rpc UpdatePatch(UpdatePatchUser) returns (User){};
     rpc Delete(UserPrimaryKey) returns (google.protobuf.Empty){};
 }
